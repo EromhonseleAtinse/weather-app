@@ -1,0 +1,34 @@
+{
+  "name": "fullstackreact",
+  "version": "1.0.0",
+  "description": "Web app using React, NodeJS and postgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EromhonseleAtinse/Play-Ground.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Atinse Eromhonsele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EromhonseleAtinse/Play-Ground/issues"
+  },
+  "homepage": "https://github.com/EromhonseleAtinse/Play-Ground#readme",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "pg": "^7.14.0"
+  }
+}
