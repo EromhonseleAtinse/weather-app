@@ -14,6 +14,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', '*')
+  next()
+})
+
 app.use('/api/cities', require('./api/cities'))
 app.use('/api/weather', require('./api/weather'))
 
